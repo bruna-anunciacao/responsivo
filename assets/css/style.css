@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Open+Sans&family=Overpass:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #BCCDD0;
+    justify-content: center;
+    align-items: center;   
+}
+
+h1 {
+    font-family: 'Josefin Sans',sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h3 {
+    font-family: 'Overpass', sans-serif;
+    color: #DFDFD6;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.card-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+footer p {
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+main {
+    display: flex;
+    width: 875px;
+    height: 492px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 50px 30px 41px;
+    border-radius: 0 30px 30px 0;
+    gap: 12px;
+    background: #DFDFD6;
+    z-index: 0;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 52px;
+    height: 52px;
+    border-radius: 85px;
+    border: none;
+    cursor: pointer;
+}
+
+.card-modal {
+    display: flex;
+    width: 875px;
+    height: 260px;
+    padding: 0 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 0 30px 30px 0;
+    z-index: 99;
+    position: absolute;
+}
+
+.modal {
+    display: none;
+    background: #696F5A;
+    width: 232px;
+    height: 44px;
+    border-radius: 15px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+@media (min-width: 721px) and (max-width: 850px){
+    .card-modal {
+        width: 850px;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 750px;
+        padding: 0;
+    }
+    #folhas{
+        transform: rotate(90deg);
+        width: 210px;
+        height: 350px;
+    }
+
+    picture {
+        height: 275px;
+    }
+
+    .card-info{
+        width: 350px;
+        height: 580px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 30px;
+        border-radius: 0 0 30px 30px;
+        gap: 70px;
+    }
+
+    .card-modal {
+        width: 350px;
+        height: 695px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 25px 30px;
+    }
+    .modal {
+        width: 222px;
+        height: 34px;
+    }
+
+}
+
